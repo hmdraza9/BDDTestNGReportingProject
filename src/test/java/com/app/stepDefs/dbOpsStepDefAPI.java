@@ -24,7 +24,7 @@ public class dbOpsStepDefAPI {
 		int multiplyActual = Integer.parseInt(num1) * Integer.parseInt(num2);
 		int multiplyExp = Integer.valueOf(multiply);
 
-		System.out.println("Expected: "+multiplyExp+", Actual: "+multiplyActual+"; Verify: " + (multiplyExp == multiplyActual));
+		log.info("Expected: "+multiplyExp+", Actual: "+multiplyActual+"; Verify: " + (multiplyExp == multiplyActual));
 
 		log.info("Multiplication of numbers Number 1: " + num1 + "; Number 2: " + num2 + " is: " + multiplyActual);
 	}

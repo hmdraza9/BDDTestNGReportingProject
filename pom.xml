@@ -15,7 +15,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cucumber.version>7.15.0</cucumber.version>
+		<cucumber.version>7.20.1</cucumber.version>
 		<selenium.version>4.17.0</selenium.version>
 		<testng.version>7.4.0</testng.version>
 		<apache.common.version>2.4</apache.common.version>
@@ -54,8 +54,23 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.17.1</version>
 		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter</artifactId>
+				<version>5.11.4</version> <!-- Use the latest JUnit Jupiter version -->
+			</dependency>
+			<!-- Cucumber Core -->
+			<dependency>
+				<groupId>io.cucumber</groupId>
+				<artifactId>cucumber-junit-platform-engine</artifactId>
+				<version>7.20.1</version>
+			</dependency>
+			<!-- JUnit 5 -->
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-api</artifactId>
+				<version>5.11.4</version>
+			</dependency>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
